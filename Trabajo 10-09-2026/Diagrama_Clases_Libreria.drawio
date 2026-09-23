@@ -1,0 +1,232 @@
+<mxfile host="app.diagrams.net" modified="2026-09-23T20:11:00.000Z" agent="Grok" version="22.1.0" etag="libreria-clases" type="device">
+  <diagram id="DiagramaClasesLibreria" name="Diagrama de Clases - Sistema Librería">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ==================== CATEGORIA ==================== -->
+        <mxCell id="Categoria" value="Categoria" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Categoria_attrs" value="+ idCategoria: int&#xa;+ nombre: String&#xa;+ descripcion: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Categoria">
+          <mxGeometry y="26" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Categoria_line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Categoria">
+          <mxGeometry y="86" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Categoria_methods" value="+ agregar()&#xa;+ modificar()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Categoria">
+          <mxGeometry y="94" width="200" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== AUTOR ==================== -->
+        <mxCell id="Autor" value="Autor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="300" y="40" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Autor_attrs" value="+ idAutor: int&#xa;+ nombre: String&#xa;+ apellido: String&#xa;+ fechaNacimiento: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Autor">
+          <mxGeometry y="26" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Autor_line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Autor">
+          <mxGeometry y="96" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Autor_methods" value="+ agregar()&#xa;+ modificar()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Autor">
+          <mxGeometry y="104" width="200" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== EDITORIAL ==================== -->
+        <mxCell id="Editorial" value="Editorial" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="560" y="40" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Editorial_attrs" value="+ idEditorial: int&#xa;+ nombre: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Editorial">
+          <mxGeometry y="26" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Editorial_line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Editorial">
+          <mxGeometry y="66" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Editorial_methods" value="+ agregar()&#xa;+ modificar()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Editorial">
+          <mxGeometry y="74" width="200" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== LIBRO ==================== -->
+        <mxCell id="Libro" value="Libro" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="260" width="220" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Libro_attrs" value="+ idLibro: int&#xa;+ titulo: String&#xa;+ descripcion: String&#xa;+ idCategoria: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Libro">
+          <mxGeometry y="26" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Libro_line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Libro">
+          <mxGeometry y="96" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Libro_methods" value="+ agregar()&#xa;+ modificar()&#xa;+ consultar()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Libro">
+          <mxGeometry y="104" width="220" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== LIBRO_AUTOR (tabla intermedia) ==================== -->
+        <mxCell id="LibroAutor" value="LibroAutor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LibroAutor_attrs" value="+ idLibro: int&#xa;+ idAutor: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LibroAutor">
+          <mxGeometry y="26" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== EDITORIAL_LIBRO (tabla intermedia) ==================== -->
+        <mxCell id="EditorialLibro" value="EditorialLibro" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="580" y="260" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EditorialLibro_attrs" value="+ idEditorial: int&#xa;+ idLibro: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EditorialLibro">
+          <mxGeometry y="26" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== INVENTARIO ==================== -->
+        <mxCell id="Inventario" value="Inventario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="480" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Inventario_attrs" value="+ idInventario: int&#xa;+ idLibro: int&#xa;+ stock: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Inventario">
+          <mxGeometry y="26" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Inventario_line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Inventario">
+          <mxGeometry y="76" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Inventario_methods" value="+ sumarLibro()&#xa;+ restarLibro()&#xa;+ verDisponibilidad()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Inventario">
+          <mxGeometry y="84" width="220" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CLIENTE ==================== -->
+        <mxCell id="Cliente" value="Cliente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="700" width="220" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Cliente_attrs" value="+ idCliente: int&#xa;+ rut: String&#xa;+ nombre: String&#xa;+ telefono: String&#xa;+ correo: String&#xa;+ tipoUsuario: String&#xa;+ habilitado: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Cliente">
+          <mxGeometry y="26" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Cliente_line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Cliente">
+          <mxGeometry y="126" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Cliente_methods" value="+ verEstado()&#xa;+ bloquearUsuario()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Cliente">
+          <mxGeometry y="134" width="220" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== PRESTAMO ==================== -->
+        <mxCell id="Prestamo" value="Prestamo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="320" y="700" width="240" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo_attrs" value="+ idPrestamo: int&#xa;+ idCliente: int&#xa;+ idLibro: int&#xa;+ fechaPrestamo: Date&#xa;+ fechaDevolucion: Date&#xa;+ estado: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Prestamo">
+          <mxGeometry y="26" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo_line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Prestamo">
+          <mxGeometry y="116" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo_methods" value="+ registrarPrestamo()&#xa;+ controlPlazo()&#xa;+ registrarDevolucion()&#xa;+ generarMulta()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Prestamo">
+          <mxGeometry y="124" width="240" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== MULTA ==================== -->
+        <mxCell id="Multa" value="Multa" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="620" y="700" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Multa_attrs" value="+ idMulta: int&#xa;+ idPrestamo: int&#xa;+ idCliente: int&#xa;+ precio: double&#xa;+ fecha: Date&#xa;+ estado: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Multa">
+          <mxGeometry y="26" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Multa_line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Multa">
+          <mxGeometry y="116" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Multa_methods" value="+ registrar()&#xa;+ cobrar()&#xa;+ anular()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Multa">
+          <mxGeometry y="124" width="200" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== RELACIONES ==================== -->
+
+        <!-- Categoria 1 --> N Libro -->
+        <mxCell id="rel_cat_libro" edge="1" parent="1" source="Categoria" target="Libro" style="endArrow=open;html=1;endSize=12;startArrow=none;startSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_cat_libro" value="1&#xa;clasifica&#xa;N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_cat_libro">
+          <mxGeometry x="-0.1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Autor N --> N Libro (a través de LibroAutor) -->
+        <mxCell id="rel_autor_la" edge="1" parent="1" source="Autor" target="LibroAutor" style="endArrow=open;html=1;endSize=12;startArrow=none;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_la_libro" edge="1" parent="1" source="LibroAutor" target="Libro" style="endArrow=open;html=1;endSize=12;startArrow=none;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_autor_libro" value="N : N&#xa;escribe" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="220" width="70" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Editorial N --> N Libro (a través de EditorialLibro) -->
+        <mxCell id="rel_ed_el" edge="1" parent="1" source="Editorial" target="EditorialLibro" style="endArrow=open;html=1;endSize=12;startArrow=none;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_el_libro" edge="1" parent="1" source="EditorialLibro" target="Libro" style="endArrow=open;html=1;endSize=12;startArrow=none;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_ed_libro" value="N : N&#xa;publica" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="220" width="70" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Libro 1 --> 1 Inventario -->
+        <mxCell id="rel_libro_inv" edge="1" parent="1" source="Libro" target="Inventario" style="endArrow=open;html=1;endSize=12;startArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_libro_inv" value="1&#xa;registra_stock&#xa;1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_libro_inv">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Libro 1 --> N Prestamo -->
+        <mxCell id="rel_libro_prest" edge="1" parent="1" source="Libro" target="Prestamo" style="endArrow=open;html=1;endSize=12;startArrow=none;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="465" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_libro_prest" value="1&#xa;es_prestado&#xa;N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_libro_prest">
+          <mxGeometry x="-0.1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Cliente 1 --> N Prestamo -->
+        <mxCell id="rel_cli_prest" edge="1" parent="1" source="Cliente" target="Prestamo" style="endArrow=open;html=1;endSize=12;startArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_cli_prest" value="1  realiza  N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_cli_prest">
+          <mxGeometry x="-0.1" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Prestamo 1 --> 0..1 Multa -->
+        <mxCell id="rel_prest_multa" edge="1" parent="1" source="Prestamo" target="Multa" style="endArrow=open;html=1;endSize=12;startArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label_prest_multa" value="1  genera  0..1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_prest_multa">
+          <mxGeometry x="-0.1" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Cliente 1 --> N Multa -->
+        <mxCell id="rel_cli_multa" edge="1" parent="1" source="Cliente" target="Multa" style="endArrow=open;html=1;endSize=12;startArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="960" />
+              <mxPoint x="670" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_cli_multa" value="1  sanciona  N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rel_cli_multa">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
